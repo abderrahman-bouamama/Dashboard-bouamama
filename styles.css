@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Trebuchet MS', sans-serif;
+
+}
+
+
+.menu {
+    display: flex;
+    width: 20%;
+
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+    background-color: #f4f4f4;
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    overflow-y: auto;
+
+}
+
+.image-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.image-box img {
+    width: 50px;
+
+    height: 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.menu ul li a:hover {
+    color: #007BFF;
+
+}
+
+
+.content {
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.nav-bar {
+    height: 15vh;
+
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.search-icons {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.search-icons input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.search-icons i {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.notif-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.notif-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.links-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.links-logo p,
+.links-logo h4 {
+    margin: 0;
+    font-size: 0.9rem;
+
+}
+
+.links-bar nav {
+    display: flex;
+    gap: 10px;
+}
+
+.links-bar nav a {
+    background-color: #007BFF;
+
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.links-bar nav a:hover {
+    background-color: #0056b3;
+
+}
+
+.container {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.main-container {
+    flex: 2;
+
+}
+
+.projects-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.project-childs {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.infos-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-info {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.projects-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+
+}
+
+.project-childs {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-childs h4 {
+    margin: 0 0 10px 0;
+}
+
+.project-childs p {
+    margin: 0 0 15px 0;
+    color: #555;
+}
+
+.project-childs .fa-solid {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #555;
+}
+
+.project-childs .fa-solid:hover {
+    color: #007BFF;
+}
+
+.project-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+
+}
+
+.project-icons i {
+    cursor: pointer;
+    color: #555;
+}
+
+.project-icons i:hover {
+    color: #007BFF;
+
+}
+
+
+.projects-info {
+    width: 30%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-container,
+.trending-container {
+    margin-bottom: 20px;
+}
+
+.announcements-card,
+.trending-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.announcements-card h4,
+.trending-card h6 {
+    margin: 0 0 10px 0;
+}
+
+.announcements-card p,
+.trending-card p {
+    margin: 0;
+    color: #555;
+}
